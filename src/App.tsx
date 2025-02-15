@@ -8,7 +8,7 @@ function Action({text, icon, id}: ActionProps) {
     return (
         <div id = {id} className = "border-amber-600 border-4">
             <img src = { icon } className = "size-60"></img>
-            <p> {text} </p>
+            <p className = "text-2xl"> {text} </p>
         </div>
     )
 }
@@ -31,8 +31,8 @@ export default function App(){
 
             <div className = "flex flex-row justify-evenly content-center mt-5">
                 <Action text = {"View CPR Network"} icon = {"images/cpr_icon.png"} id = {"id"}></Action>
-                <Action text = {"Find CPR classes"} icon = {"image stuff"} id = {"id"}></Action>
-                <Action text = {"Community Forum"} icon = {"image stuff"} id = {"id"}></Action>
+                <Action text = {"Find CPR classes"} icon = {"images/book.png"} id = {"id"}></Action>
+                <Action text = {"Community Forum"} icon = {"images/chat_bubble.png"} id = {"id"}></Action>
             </div>
         
         </div>
